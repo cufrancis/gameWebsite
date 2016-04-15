@@ -16,6 +16,7 @@
 // });
 
 Route::get('/', 'IndexController@index');
+Route::get('/article/show/{title?}', 'ArticleController@show');
 
 Route::auth();
 Route::get('/home', 'HomeController@index');
